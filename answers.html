@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for consistent text rendering -->
+    <meta charset="UTF-8" />
+
+    <!-- Page title shown in browser tab and announced by screen readers -->
+    <title>Practice Questions - Answered</title>
+
+    <style>
+      /* Minimal styling allowed in Lab 01 (color + font only) */
+      body {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page header: identifies the page purpose -->
+    <header>
+      <h1>Practice Questions - Answered</h1>
+    </header>
+
+    <!-- Primary navigation: identical structure across all pages -->
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+
+        <!-- Current page is indicated using aria-current -->
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="analysis.html">Interaction Analysis</a></li>
+        <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
+        <li><a href="assignment01.html">Lab 01 Rules</a></li>
+        <li>
+          <a href="answers.html" aria-current="page"
+            >Lab Exam Practice Questions - Answered</a
+          >
+        </li>
+        <li><a href="added_learnings.html">Added Learning</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main landmark: primary content of this page -->
+    <main>
+      <section>
+        <h2>Part B: True / False</h2>
+        <ol>
+          <li>
+            Every link inside <code>&lt;ul&gt;</code> must be placed inside an
+            <code>&lt;li&gt;</code>. <strong>T</strong>
+          </li>
+          <li>
+            A page may have multiple
+            <code>&lt;h1&gt;</code> headings to make text larger.
+            <strong>F</strong>
+          </li>
+          <li>
+            <code>aria-current="page"</code> should be used on the active
+            navigation item. <strong>T</strong>
+          </li>
+          <li>
+            A form is accessible even if it has no
+            <code>&lt;label&gt;</code> elements. <strong>F</strong>
+          </li>
+          <li>
+            KLM predicts execution time for expert, error-free performance.
+            <strong>T</strong>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Part C: Short Answer</h2>
+        <ol>
+          <li>
+            <p>
+              <strong>
+                Explain the difference between a semantic element (e.g., nav)
+                and a generic element (e.g., div).
+              </strong>
+            </p>
+            <p>
+              A semantic element (such as <code> &lt;nav&gt;</code>) conveys the
+              meaning and purpose of its content to browsers, screen readers,
+              and search engines, improving accessibility and structure. Whereas
+              a generic element (such as <code> &lt;div&gt;</code>) has no
+              inherent meaning and is used only for grouping or styling content,
+              providing no information about the role of that content.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>
+                Why does KLM not model high-level planning and interpretation?
+              </strong>
+            </p>
+            <p>
+              KLM does not include high-level planning and interpretation
+              because it assumes the user already knows what to do. Since the
+              task is routine and error-free, KLM only measures the time for
+              simple actions, not thinking or decision-making.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="added_learnings.html">Added Learnings</a></p>
+    </footer>
+  </body>
+</html>
