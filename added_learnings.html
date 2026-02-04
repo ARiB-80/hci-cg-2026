@@ -13,6 +13,12 @@
       .lecture {
         background-color: rgba(127, 255, 212, 0.323);
       }
+      .lecture {
+        background-color: rgba(127, 255, 212, 0.323);
+      }
+      .self_study {
+        background-color: rgba(127, 234, 255, 0.323);
+      }
 
       img {
         width: 400px;
@@ -23,7 +29,10 @@
   <body>
     <header>
       <h1>Added Learning</h1>
-      <p>These are my notes and understanding of lectures from week 1-4.</p>
+      <p>
+        These are my notes and understanding of lectures from week 1-4 and
+        content that I've studeied from the book.
+      </p>
     </header>
 
     <nav aria-label="Primary navigation">
@@ -46,6 +55,186 @@
     </nav>
 
     <main>
+      <section class="self_study">
+        <h2>Self Study</h2>
+        <p>
+          Good interface design takes time and effort, but small, thoughtful
+          decisions—such as considering real users and involving them early—can
+          prevent serious design flaws. The Automatic syringe example shows how
+          a numeric keypad interface led to a dangerous tenfold dosage error, a
+          problem that was only discovered after consulting hospital staff.
+        </p>
+        <article>
+          <h3>Analyzing the Syringe Interface Using Different Models</h3>
+          <p>
+            The following sections explain how Norman’s Model, GOMS, and KLM
+            each analyze the redesign of the syringe interface, which replaced a
+            numeric keypad with increment and decrement buttons.
+          </p>
+        </article>
+        <article>
+          <h4>Norman’s Cycle of Action</h4>
+          <p>
+            Norman’s model highlights a large gulf of execution in the original
+            keypad design. The user’s goal of setting an accurate dose was
+            poorly supported, since a single extra key press could result in a
+            fatal dosage. The redesigned button-based interface reduces this
+            gulf by better matching the user’s intentions with safe, controlled
+            actions.
+          </p>
+        </article>
+        <article>
+          <h4>GOMS Model</h4>
+          <p>
+            Using GOMS, the task of entering a dose is broken down into goals,
+            methods, and operators. The keypad method allows faster input but
+            provides limited support for detecting or correcting errors. In
+            contrast, the button-based method is slower but forces users to
+            verify each adjustment, improving safety during the task.
+          </p>
+        </article>
+        <article>
+          <h4>Keystroke-Level Model (KLM)</h4>
+          <p>
+            KLM focuses on predicting execution time for expert users. It would
+            likely show that entering a dose with a keypad is faster due to
+            fewer keystrokes, while button presses take longer. However, this
+            comparison also demonstrates that speed alone is not an appropriate
+            measure for safety-critical systems like medical devices.
+          </p>
+        </article>
+        <article>
+          <h4>The Importance of Iteration</h4>
+          <p>
+            Since people and contexts are complex, interface design rarely
+            succeeds on the first attempt. Creating early prototypes and
+            involving users throughout the design process helps identify serious
+            flaws before they become permanently embedded in the system.
+          </p>
+        </article>
+
+        <article>
+          <h3>Norman’s Model of Interaction</h3>
+          <p>
+            Donald Norman is a key figure in Human–Computer Interaction and is
+            well known for promoting user-centered design, usability, and
+            cognitive engineering. His model of interaction is influential
+            because it closely matches how users naturally think about and
+            interact with computer systems.
+          </p>
+          <p>
+            According to Norman’s model, interaction begins when a user forms a
+            goal and plans how to achieve it. The user then performs actions
+            through the interface. After executing these actions, the user
+            observes the system’s response and evaluates whether the outcome
+            matches their original goal, deciding what to do next.
+          </p>
+        </article>
+
+        <article>
+          <h4>The Seven Stages of Action</h4>
+          <p>
+            Norman divides interaction into two main phases: execution and
+            evaluation. Together, these phases consist of seven stages:
+          </p>
+          <ol>
+            <li>Establishing the goal</li>
+            <li>Forming the intention</li>
+            <li>Specifying the action sequence</li>
+            <li>Executing the action</li>
+            <li>Perceiving the system state</li>
+            <li>Interpreting the system state</li>
+            <li>Evaluating the outcome against the goal</li>
+          </ol>
+        </article>
+
+        <article>
+          <h4>Gulfs of Execution and Evaluation</h4>
+          <p>
+            Norman uses this model to explain why users struggle with poorly
+            designed interfaces. The gulf of execution refers to the gap between
+            what a user wants to do and the actions the system makes available.
+            The gulf of evaluation refers to the gap between what the system
+            does and how easily the user can understand the result.
+          </p>
+        </article>
+
+        <article>
+          <h4>Human Error: Slips and Mistakes</h4>
+          <p>
+            Human errors can be divided into slips and mistakes. Slips occur
+            when the user understands the system but performs the action
+            incorrectly, such as mistyping or clicking the wrong button.
+            Mistakes occur when the user forms the wrong goal due to
+            misunderstanding the system, such as misinterpreting an icon’s
+            meaning.
+          </p>
+          <p>
+            Slips can often be reduced through better interface design, like
+            increasing spacing between buttons. Mistakes usually require deeper
+            changes, such as redesigning the interface, improving training, or
+            using clearer metaphors.
+          </p>
+        </article>
+
+        <article>
+          <h3>GOMS Model</h3>
+          <p>
+            The GOMS model, developed by Card, Moran, and Newell, describes how
+            users complete tasks by breaking interaction into Goals, Operators,
+            Methods, and Selection rules. It helps designers understand both the
+            cognitive and physical steps involved in task performance.
+          </p>
+          <p>
+            Goals represent what the user wants to achieve. Operators are basic
+            actions such as pressing a key or reading a dialog box. Methods
+            describe different ways of achieving a goal, while selection rules
+            determine which method a user chooses based on context or habit.
+          </p>
+        </article>
+
+        <article>
+          <h4>Design Focus: Why GOMS Saves Money</h4>
+          <p>
+            GOMS has been used in real-world system evaluations. For example,
+            the telephone company NYNEX used GOMS to analyze a proposed computer
+            system and discovered it would be slower than the existing one. As a
+            result, the company abandoned the project, saving millions of
+            dollars.
+          </p>
+        </article>
+
+        <article>
+          <h3>Keystroke-Level Model (KLM)</h3>
+          <p>
+            The Keystroke-Level Model is a detailed extension of GOMS that
+            focuses on predicting execution time for expert users performing
+            routine tasks. It is designed for short, well-defined tasks that
+            usually take less than 20 seconds.
+          </p>
+          <p>
+            KLM assumes error-free performance and concentrates only on the
+            execution phase of interaction. It breaks tasks into low-level
+            operators such as key presses, mouse clicks, pointing, hand
+            movement, mental preparation, and system response time.
+          </p>
+          <p>
+            By assigning standard time values to each operator and summing them,
+            KLM allows designers to compare different interface designs or task
+            methods and predict which one will be faster—without running full
+            user experiments.
+          </p>
+        </article>
+
+        <article>
+          <p style="font-weight: bold">
+            Reference: Human-Computer Interaction, Alan Dix, Chapter 3 -
+            Interaction and Chapter 12 - Cognitive Models, and the Design Focus.
+            Page # 125, 422–424, 437–439.
+          </p>
+        </article>
+      </section>
+
       <!-- Lecture 1 -->
       <section class="lecture">
         <h2>Lecture 1</h2>
